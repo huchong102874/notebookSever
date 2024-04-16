@@ -7,5 +7,4 @@ app.use(require('koa-static')(__dirname + '/public'))
 app.on('error', (err, ctx) => {
   console.error('server error', err, ctx)
 });
-console.log(222)
 module.exports = app
