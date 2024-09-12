@@ -18,11 +18,14 @@ const readdir = (folderName) => {
 const mkdirSync = (folderName) => {
   fs.mkdirSync(folderName, { recursive: true });
 };
-
+const appendFileSync = (folderName,data) => {
+  fs.appendFileSync(folderName,data, 'utf8',);
+};
 
 module.exports = {
   writeFile,
   readFile,
   readdir,
   mkdirSync,
+  appendFileSync
 };
